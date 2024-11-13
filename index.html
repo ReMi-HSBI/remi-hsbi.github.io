@@ -18,7 +18,7 @@
             $.get("header.html", function(data){
                 $("#header-placeholder").replaceWith(data);
             });
-            $.get("test.html", function(data){
+            $.get("summary.html", function(data){
                 $("#summary").html(data);
             });
         </script>
@@ -45,9 +45,9 @@
         </svg>
         <main>
             <header id="header-placeholder"></header>
-            <div class="container my-5">
+            <div class="container py-4">
                 <h1>Resource-efficient Microelectronics and Cognitive Edge Computing (ReMi)</h1>
-                <div class="container" id="summary"></div>
+                <div class="container px-0" id="summary"></div>
             </div>
         </main>
     </body>
