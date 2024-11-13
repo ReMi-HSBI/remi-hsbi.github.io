@@ -19,7 +19,7 @@
                 $("#header-placeholder").replaceWith(data);
             });
             $.get("test.txt", function(data){
-                $("#summary").text(data);
+                $("#summary").html(data);
             });
         </script>
     </head>
@@ -47,7 +47,7 @@
             <header id="header-placeholder"></header>
             <div class="container my-5">
                 <h1>Resource-efficient Microelectronics and Cognitive Edge Computing (ReMi)</h1>
-                <p id="summary"></p>
+                <div id="summary"></div>
             </div>
         </main>
     </body>
