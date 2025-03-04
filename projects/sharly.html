@@ -5,20 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="icon" href="assets/images/logos/ReMi_tiny.svg">
+        <link rel="icon" href="/assets/images/logos/ReMi_tiny.svg">
 
         <title>Resource-efficient Microelectronics and Cognitive Edge Computing (ReMi)</title>
 
         <!-- Bootstrap core CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
+        <link href="/styles.css" rel="stylesheet">
         
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script>
-            $.get("../header.html", function(data){
+            $.get("/header.html", function(data){
                 $("#header-placeholder").replaceWith(data);
             });
-            $.get("summaries/sharly.html", function(data){
+            $.get("/projects/summaries/sharly.html", function(data){
                 $("#summary").html(data);
             });
         </script>
@@ -47,7 +47,7 @@
             <header id="header-placeholder"></header>
             <div class="container py-4">
                 <p align="center">
-                    <img src="../assets/images/logos/sharly_logo.svg" alt="SHARLY logo" width="11%"/>
+                    <img src=/assets/images/logos/sharly_logo.svg" alt="SHARLY logo" width="11%"/>
                 </p>
                 <h1>SHARLY - The Smart Assistant for Intelligent Environments.</h1>
                 <div class="container px-0" id="summary"></div>
