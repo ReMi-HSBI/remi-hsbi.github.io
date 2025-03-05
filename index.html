@@ -18,17 +18,18 @@
             $.get("header.html", function(data){
                 $("#header-placeholder").replaceWith(data);
             });
-            $.get("summary.html", function(data){
-                $("#summary").html(data);
+            $.get("/content/index.html", function(data){
+                $("#content").html(data);
             });
         </script>
     </head>
     <body>
+        <header id="header-placeholder"></header>
         <main>
-            <header id="header-placeholder"></header>
-            <div class="container py-4">
+            <div class="container p-5">
                 <h1>Resource-efficient Microelectronics and Cognitive Edge Computing (ReMi)</h1>
-                <div class="container px-0" id="summary"></div>
+                <hr>
+                <div class="container px-0 text-justify" id="content"></div>
             </div>
         </main>
     </body>
