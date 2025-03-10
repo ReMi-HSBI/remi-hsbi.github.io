@@ -1,42 +1,44 @@
-<p>
-    Die fortschreitende Miniaturisierung mikroelektronischer Schaltkreise ermöglicht zum einen die Integration von
-    mehr und mehr Transistoren auf einem einzelnen Chip. Zum anderen können dadurch auch immer höhere Taktfrequenzen
-    erreicht werden. Die alleinige Erhöhung der Taktfrequenz geht aber auch mit einer steigenden Leistungsaufnahme
-    und sinkenden Energieeffizienz einher. Der aktuelle Trend in der Entwicklung eingebetteter Systeme geht daher
-    mit einer zunehmenden Parallelisierung einher: Mehrere parallele Verarbeitungseinheiten können den gleichen
-    Durchsatz wie Einzelprozessoren zur Verfügung stellen – Allerdings bei vergleichsweise geringerer Taktfrequenz
-    und höheren Energieeffizienz. Die Regularität massiv-paralleler On-Chip-Multiprozessoren
-    (Multiprocessor-System-On-Chips, MPSoCs) in Verbindung mit einer leistungsfähigen
-    On-Chip-Kommunikationsinfrastruktur (Network-On-Chip, NoC) führt zu einer hohen Skalierbarkeit und ermöglicht so
-    die Realisierung von MPSoCs mit hunderten oder tausenden Rechenkernen.
-</p>
-<p>
-    Moderne KI-Verfahren sind aus der heutigen Zeit nicht mehr wegzudenken. Die Leistungsfähigkeit etablierter
-    ML-Verfahren als Teilgebiet der KI basiert aber bisher meist auf der Nutzung leistungsfähiger dezentraler
-    Rechenressourcen (High-Performance Computing, HPC) in der Cloud. Nicht nur für das Lernen der Modelle, sondern
-    auch für deren Ausführung (Inferenz) ist der Anwender auf diese leistungsfähigen Ressourcen angewiesen. Die
-    insbesondere im Bereich der industriellen Anwendung auftretenden Anforderungen weichen jedoch aufgrund hoher
-    Ansprüche an niedrige Latenz, Echtzeitfähigkeit oder die Verarbeitung der Daten nahe ihrer Entstehung
-    (Datenlokalität) von den durch große Anbieter von KI-/ML-Know-How adressierten Fragestellungen ab.
-</p>
-<p>
-    Im Bereich der effizienten Ausführung von KI-Verfahren auf eingebetteten Systemen (Cognitive Edge Computing)
-    wurden in der Vergangenheit große Fortschritte gemacht. Auf allen Ebenen der unterschiedlichen
-    Verarbeitungskonzepte (Cloud, Fog, Edge, Very Edge) finden sich eine Vielzahl potenzieller Hardwarearchitekturen
-    und KI-beschleuniger, die sich in den zur Verfügung stehenden Systemressourcen (z.B. Performanz oder
-    Leistungsaufnahme) unterscheiden. Beispiele für relevante Hardwarearchitekturen sind eingebettete
-    Mikrocontroller mit integrierter KI-Beschleunigung, Embedded GPUs/FPGAs, dedizierte KI-Hardwarebeschleuniger
-    oder High-End GPUs/FPGAs aus dem HPC-Bereich.
-</p>
-<p>
-    Übergeordnetes Ziel der AG „Ressourceneffiziente Mikroelektronik und Cognitive Edge Computing“ ist daher die
-    Erforschung von Methoden und Verfahren für die effiziente Ausführung von KI- und ML-Verfahren auf
-    ressourcenbeschränkter Hardware im Sinne eines HW/KI-Co-Designs. Bei der Exploration des sich daraus ergebenen
-    Entwurfsraums betrachten wir nicht nur den linearen Prozess von der Modellbildung bis zur Inferenz, sondern auch
-    die Rückwirkungen der Wahl geeigneter Hardware auf die ursprüngliche Modellbildung.
-</p>
-<p>
-    Die in der Arbeitsgruppe entwickelten Methoden und Verfahren evaluieren wir in den praktischen
-    Anwendungsszenarien der im Folgenden aufgeführten abgeschlossenen und laufenden Forschungsprojekten im Rahmen
-    des CareTech OWL, des ISyM sowie weiteren Forschungsverbünden an der HSBI.
-</p>
+<div class="lead">
+    <p>
+        Die fortschreitende Miniaturisierung mikroelektronischer Schaltkreise ermöglicht zum einen die Integration von
+        mehr und mehr Transistoren auf einem einzelnen Chip. Zum anderen können dadurch auch immer höhere Taktfrequenzen
+        erreicht werden. Die alleinige Erhöhung der Taktfrequenz geht aber auch mit einer steigenden Leistungsaufnahme
+        und sinkenden Energieeffizienz einher. Der aktuelle Trend in der Entwicklung eingebetteter Systeme geht daher
+        mit einer zunehmenden Parallelisierung einher: Mehrere parallele Verarbeitungseinheiten können den gleichen
+        Durchsatz wie Einzelprozessoren zur Verfügung stellen – Allerdings bei vergleichsweise geringerer Taktfrequenz
+        und höheren Energieeffizienz. Die Regularität massiv-paralleler On-Chip-Multiprozessoren
+        (Multiprocessor-System-On-Chips, MPSoCs) in Verbindung mit einer leistungsfähigen
+        On-Chip-Kommunikationsinfrastruktur (Network-On-Chip, NoC) führt zu einer hohen Skalierbarkeit und ermöglicht so
+        die Realisierung von MPSoCs mit hunderten oder tausenden Rechenkernen.
+    </p>
+    <p>
+        Moderne KI-Verfahren sind aus der heutigen Zeit nicht mehr wegzudenken. Die Leistungsfähigkeit etablierter
+        ML-Verfahren als Teilgebiet der KI basiert aber bisher meist auf der Nutzung leistungsfähiger dezentraler
+        Rechenressourcen (High-Performance Computing, HPC) in der Cloud. Nicht nur für das Lernen der Modelle, sondern
+        auch für deren Ausführung (Inferenz) ist der Anwender auf diese leistungsfähigen Ressourcen angewiesen. Die
+        insbesondere im Bereich der industriellen Anwendung auftretenden Anforderungen weichen jedoch aufgrund hoher
+        Ansprüche an niedrige Latenz, Echtzeitfähigkeit oder die Verarbeitung der Daten nahe ihrer Entstehung
+        (Datenlokalität) von den durch große Anbieter von KI-/ML-Know-How adressierten Fragestellungen ab.
+    </p>
+    <p>
+        Im Bereich der effizienten Ausführung von KI-Verfahren auf eingebetteten Systemen (Cognitive Edge Computing)
+        wurden in der Vergangenheit große Fortschritte gemacht. Auf allen Ebenen der unterschiedlichen
+        Verarbeitungskonzepte (Cloud, Fog, Edge, Very Edge) finden sich eine Vielzahl potenzieller Hardwarearchitekturen
+        und KI-beschleuniger, die sich in den zur Verfügung stehenden Systemressourcen (z.B. Performanz oder
+        Leistungsaufnahme) unterscheiden. Beispiele für relevante Hardwarearchitekturen sind eingebettete
+        Mikrocontroller mit integrierter KI-Beschleunigung, Embedded GPUs/FPGAs, dedizierte KI-Hardwarebeschleuniger
+        oder High-End GPUs/FPGAs aus dem HPC-Bereich.
+    </p>
+    <p>
+        Übergeordnetes Ziel der AG „Ressourceneffiziente Mikroelektronik und Cognitive Edge Computing“ ist daher die
+        Erforschung von Methoden und Verfahren für die effiziente Ausführung von KI- und ML-Verfahren auf
+        ressourcenbeschränkter Hardware im Sinne eines HW/KI-Co-Designs. Bei der Exploration des sich daraus ergebenen
+        Entwurfsraums betrachten wir nicht nur den linearen Prozess von der Modellbildung bis zur Inferenz, sondern auch
+        die Rückwirkungen der Wahl geeigneter Hardware auf die ursprüngliche Modellbildung.
+    </p>
+    <p>
+        Die in der Arbeitsgruppe entwickelten Methoden und Verfahren evaluieren wir in den praktischen
+        Anwendungsszenarien der im Folgenden aufgeführten abgeschlossenen und laufenden Forschungsprojekten im Rahmen
+        des CareTech OWL, des ISyM sowie weiteren Forschungsverbünden an der HSBI.
+    </p>
+</div>
