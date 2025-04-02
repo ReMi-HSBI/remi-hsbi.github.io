@@ -24,6 +24,14 @@
         </a>
     </div>
     <div class="col mb-3">
+        <img class="mb-3" src="/assets/images/logos/NireHApS.jpg" alt="NireHApS Logo" height="40">
+        <h4>NireHApS</h4>
+        <div id="project-NireHApS-placeholder"></div>
+        <a href="https://dataninja.nrw/" class="icon-link">
+            Visit Website >
+        </a>
+    </div>
+    <div class="col mb-3">
         <h4>Edge4SparseML</h4>
         <div id="project-edge4sparseML-placeholder"></div>
     </div>
@@ -31,6 +39,7 @@
         <h4>Career@BI</h4>
         <div id="project-careerBI-placeholder"></div>
     </div>
+
 </div>
 <script>
     $.get("/projects/sail.html", function (data) {
@@ -47,5 +56,8 @@
     });
     $.get("/projects/careerBI.html", function (data) {
         $("#project-careerBI-placeholder").replaceWith(data);
+    });
+    $.get("/projects/NireHApS.html", function (data) {
+        $("#project-NireHApS-placeholder").replaceWith(data);
     });
 </script>
