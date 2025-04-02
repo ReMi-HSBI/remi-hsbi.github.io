@@ -1,0 +1,51 @@
+<div class="row g-3 row-cols-1">
+    <div class="col mb-3">
+        <img class="mb-3" src="/assets/images/logos/SAIL_rgb.svg" alt="SAIL Logo" height="81">
+        <h4>SAIL</h4>
+        <div id="project-sail-placeholder"></div>
+        <a href="https://www.sail.nrw" class="icon-link">
+            Visit Website >
+        </a>
+    </div>
+    <div class="col mb-3">
+        <img class="mb-3" src="/assets/images/logos/RailCampusOwl_rgb.svg" alt="RailCampus OWL Logo" height="81">
+        <h4>enableATO</h4>
+        <div id="project-enableATO-placeholder"></div>
+        <a href="https://railcampus-owl.de" class="icon-link">
+            Visit Website >
+        </a>
+    </div>
+    <div class="col mb-3">
+        <img class="mb-3" src="/assets/images/logos/CareTechOWL_rgb.svg" alt="CareTechOWL Logo" height="81">
+        <h4>CareTech OWL - Data Awareness and Human Digital Twin (IK2)</h4>
+        <div id="project-caretechOWL-placeholder"></div>
+        <a href="https://www.caretech-owl.de/projekte/projekt-transcaretech/innovationskerne/innovationskern-2" class="icon-link">
+            Visit Website >
+        </a>
+    </div>
+    <div class="col mb-3">
+        <h4>Edge4SparseML</h4>
+        <div id="project-edge4sparseML-placeholder"></div>
+    </div>
+    <div class="col mb-3">
+        <h4>Career@BI</h4>
+        <div id="project-careerBI-placeholder"></div>
+    </div>
+</div>
+<script>
+    $.get("/projects/sail.html", function (data) {
+        $("#project-sail-placeholder").replaceWith(data);
+    });
+    $.get("/projects/enableATO.html", function (data) {
+        $("#project-enableATO-placeholder").replaceWith(data);
+    });
+    $.get("/projects/caretechOWL.html", function (data) {
+        $("#project-caretechOWL-placeholder").replaceWith(data);
+    });
+    $.get("/projects/edge4sparseML.html", function (data) {
+        $("#project-edge4sparseML-placeholder").replaceWith(data);
+    });
+    $.get("/projects/careerBI.html", function (data) {
+        $("#project-careerBI-placeholder").replaceWith(data);
+    });
+</script>
